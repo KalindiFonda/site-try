@@ -1,0 +1,232 @@
+* {
+	-webkit-box-sizing: border-box;
+  	-moz-box-sizing: border-box;
+  	box-sizing: border-box;
+}
+
+body {
+	font-family: Impact, Verdana, sans-serif;
+	text-align: center;
+	color: white;
+  	background:  url(img/temporama.gif) no-repeat center center fixed;
+  	background-size: cover;
+}
+
+div.a {
+	width: 50px;
+	height:50px;
+ 	background-color:red;
+	position:fixed;
+}
+
+.img {
+	position: relative;
+  	height: 1000px;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-position: cover;
+}
+
+#video {
+    position: relative;
+    padding: 25px;
+    height: 600px;
+}
+
+.videoWrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  padding-top: 25px;
+  height: 0;
+}
+
+.videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 1px;
+  width: 100%;
+  height: 100%;
+}
+
+.video-iframe {
+	padding: 56.25% 0 0 0;
+	position: relative;
+}
+
+.video-itself {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+video {
+	max-width: 100%;
+}
+
+iframe {
+	overflow: hidden;
+}
+
+.head {
+	background-image: url(img/head.png);
+	height: 1000px;
+}
+
+.sitting {
+	background-image: url(img/sitting.jpg);
+}
+
+.back {
+	background-image: url(img/back.jpg);
+}
+
+.green {
+	background-image: url(img/green.jpg);
+}
+
+
+.wall {
+	background-image: url(img/wall.jpg);
+}
+
+.nokiss {
+	background-image: url(img/nokiss.jpg);
+}
+
+.postelja {
+	background-image: url(img/postelja.png);
+	background-size: cover;
+	height: 900px;
+	bottom: 0;
+	right: 0;
+}
+
+
+.content {
+	display: flex;
+	justify-content: space-around;
+}
+
+
+nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	min-width: 100%;
+	padding: 0.8em 0;
+	position:right;
+	z-index: 100;
+}
+
+
+.link {
+	display: flex;
+	justify-content: space-between;
+	max-width: 50%;
+}
+
+
+.link {
+	width: 50%
+}
+
+a,
+.name {
+	text-decoration: none;
+	color: rgb(219, 68, 55)
+}
+
+a:hover {
+	color: rgb(57, 97, 211);
+}
+
+.name {
+	font-weight: 900;
+}
+
+
+.text {
+	background-color: black;
+	padding: 4em;
+	width: 900px;
+	height: 400px;
+	font-family: Verdana, sans-serif;
+
+}
+
+
+#top {
+    padding-top: 35px;
+    margin-top: -35px;
+}
+
+#o-filmu {
+	max-width: 50%;
+	margin: 5em auto;
+}
+
+/*https://jsfiddle.net/fbysq8k1/1/*/
+.video-container video {
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    max-height:400px;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+    background-size: cover;
+    transition: 1s opacity;
+}
+
+.video-container {
+    height: 600px;
+}
+
+.video-parallax {
+    -webkit-transition-position: fixed;
+    position: fixed;
+}
+
+table {
+	margin: 2em auto;
+}
+
+.projekcije-table td {
+	padding: 0 30px;
+}
+
+.projekcije-table th {
+	padding: 1em 0;
+}
+
+.logo {
+	background-color: black:
+	z-index:100;
+}
+
+.logo img {
+	margin-top: 0.8em;
+	margin-bottom: 0.5em;
+	width: 200px;
+	height: 39.5px;
+}
+
+
+@media screen and (max-width: 600px) {
+	.logo {
+		padding: 0.4em;
+		max-width: 125px; max-height: 24px;
+	}
+
+	.img {
+		height: 300px;
+	}
+}
