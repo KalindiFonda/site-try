@@ -11,15 +11,7 @@ body {
   	background:  url(img/temporama.gif) no-repeat center center fixed;
   	background-size: cover;
 }
-/*
-div .a {
-	width: 50px;
-	height: 50px;
- 	background-color: red;
-	position: fixed;
-	z-index: 100;
-}
-*/
+
 .img {
 	position: relative;
   	height: 1000px;
@@ -86,7 +78,6 @@ iframe {
 	background-image: url(img/green.jpg);
 }
 
-
 .wall {
 	background-image: url(img/wall.jpg);
 }
@@ -97,36 +88,37 @@ iframe {
 
 .postelja {
 	background-image: url(img/postelja.png);
-	background-size: cover;
-	min-height: 100%;
-	bottom: 0;
-	right: 0;
 }
 
 
-.content {
+.content,
+.mediji-text {
 	display: flex;
 	justify-content: space-around;
 }
 
-
 nav {
 	position: fixed;
-	top: 0;
-	left: 0;
 	min-width: 100%;
 	padding: 0.8em 0;
-	position:right;
 	z-index: 100;
+}
+
+
+#top,
+#o-filmu,
+#projekcije,
+#mediji {
+    padding-top: 35px;
+    margin-top: -35px;
 }
 
 
 .link {
 	display: flex;
 	justify-content: space-between;
-	width: 50%;
+	width: 45%;
 }
-
 
 
 a,
@@ -139,28 +131,17 @@ a:hover {
 	color: rgb(57, 97, 211);
 }
 
-.name {
-	font-weight: 900;
-}
-
-
 .text {
 	background-color: black;
 	padding: 4em;
-	height: 400px;
+	height: 250px;
 	font-family: Verdana, sans-serif;
 
 }
 
-
-#top {
-    padding-top: 35px;
-    margin-top: -35px;
-}
-
 #o-filmu {
 	max-width: 50%;
-	margin: 5em auto;
+	margin: 1em auto;
 }
 
 /*https://jsfiddle.net/fbysq8k1/1/*/
@@ -188,23 +169,20 @@ a:hover {
 }
 
 table {
-	margin: 2em auto;
+	margin: 1em auto;
 }
 
 .projekcije-table td {
-	padding: 0 30px;
+	padding: 0 2em;
 }
 
 .projekcije-table th {
 	padding: 1em 0;
 }
 
-.logo {
+.logo img {
 	background-color: black:
 	z-index:100;
-}
-
-.logo img {
 	margin-top: 0.8em;
 	margin-bottom: 0.5em;
 	width: 200px;
