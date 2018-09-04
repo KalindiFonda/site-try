@@ -11,14 +11,15 @@ body {
   	background:  url(img/temporama.gif) no-repeat center center fixed;
   	background-size: cover;
 }
-
-div.a {
+/*
+div .a {
 	width: 50px;
-	height:50px;
- 	background-color:red;
-	position:fixed;
+	height: 50px;
+ 	background-color: red;
+	position: fixed;
+	z-index: 100;
 }
-
+*/
 .img {
 	position: relative;
   	height: 1000px;
@@ -52,11 +53,6 @@ div.a {
   height: 100%;
 }
 
-.video-iframe {
-	padding: 56.25% 0 0 0;
-	position: relative;
-}
-
 .video-itself {
 	position: absolute;
 	top: 0;
@@ -75,7 +71,7 @@ iframe {
 
 .head {
 	background-image: url(img/head.png);
-	height: 1000px;
+	min-height: 1000px;
 }
 
 .sitting {
@@ -102,7 +98,7 @@ iframe {
 .postelja {
 	background-image: url(img/postelja.png);
 	background-size: cover;
-	height: 900px;
+	min-height: 100%;
 	bottom: 0;
 	right: 0;
 }
@@ -128,13 +124,10 @@ nav {
 .link {
 	display: flex;
 	justify-content: space-between;
-	max-width: 50%;
+	width: 50%;
 }
 
 
-.link {
-	width: 50%
-}
 
 a,
 .name {
@@ -154,7 +147,6 @@ a:hover {
 .text {
 	background-color: black;
 	padding: 4em;
-	width: 900px;
 	height: 400px;
 	font-family: Verdana, sans-serif;
 
@@ -221,12 +213,7 @@ table {
 
 
 @media screen and (max-width: 600px) {
-	.logo {
-		padding: 0.4em;
-		max-width: 125px; max-height: 24px;
-	}
 
-	.img {
-		height: 300px;
-	}
+
+
 }
