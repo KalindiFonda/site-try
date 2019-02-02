@@ -5,6 +5,9 @@ $(document).ready(function() {
 });
 
 
+$(".text").each("mouseover", function() {
+  $(".text").addClass('permahover');
+});
 
 $(document).ready(function(){
     animateDiv();

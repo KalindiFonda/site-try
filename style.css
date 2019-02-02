@@ -110,11 +110,15 @@ h2 {
 
 video {
 	max-width: 100%;
-}
-
-.videoWrapper {
 	min-width: 100%;
 }
+
+#trailer {
+	padding-top: 200px;
+	padding-bottom: 200px;
+}
+
+
 /*
 iframe {
 	//overflow: hidden;
@@ -122,6 +126,17 @@ iframe {
 }
 */
 
+.credits {
+	position: relative;
+	font-size: 20px;
+	font-weight: 100;
+	padding-top: 55%;
+ /*
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%)
+  */
+}
 
 
 .img {
@@ -162,7 +177,8 @@ iframe {
 
 
 .content,
-.mediji-text {
+.reviews,
+#projekcije {
 	display: flex;
 	justify-content: space-around;
 }
@@ -177,12 +193,12 @@ nav {
 /*
 #top,
 #o-filmu,
-#projekcije,
-#mediji {
-    padding-top: 35px;
-    margin-top: -35px;
+#mediji, */
+#projekcije
+ {
+    padding-top: 400px;
+    margin-top: -400px;
 }
-*/
 
 .link {
 	display: flex;
@@ -195,16 +211,33 @@ a,
 	text-decoration: none;
 	color: rgb(219, 68, 55)
 }
-
+/*
 a:hover {
 	color: rgb(57, 97, 211);
 }
+*/
+.reviews,
+#projekcije {
+	flex-wrap: wrap;
+}
+
+.month {
+	padding: 10px;
+}
 
 .text {
-	background-color: black;
-	padding: 4em;
-	height: 250px;
+	padding: 1em;
 	font-family: Verdana, sans-serif;
+	width: 300px;
+	color: black;
+}
+
+.text:hover {
+	color: red;
+}
+
+.permhover {
+	color: blue;
 }
 /*
 #o-filmu {
@@ -262,6 +295,12 @@ table {
 
 }
 
+.media {
+	z-index: 1;
+	position: fixed;
+	right: 1.4em;
+	bottom: 3.2em;
+}
 
 .loader {
 	visibility: visible;
