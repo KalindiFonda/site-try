@@ -6,10 +6,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="http://www.iconj.com/ico/2/r/2rk7p6plke.ico" type="img/x-icon">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="script.js" type="text/javascript"></script>
 
 </head>
 <body id="top">
+  <div class="lds-ellipsis loader"><div></div><div></div><div></div><div></div></div>
+
+
+  <!--
   <nav class="content">
     <a href="#top">POSLEDICE</a>
     <div class="link">
@@ -18,21 +25,24 @@
       <a href="#mediji">MEDIJI</a>
     </div>
   </nav>
-  <header class="img head"></header>
-  <div class="main">
-    <div id="o-filmu" >
-      <h3>O filmu</h3>
-      <p class="text">
-        18-letni Andrej je zaradi svojega težavnega vedenja poslan v vzgojni zavod za mladino, kjer spozna Željka, neformalnega vodjo tamkajšnjih gojencev. Ko odkrije Andrejevo skrivnost, ga prične Željko kmalu izkoriščati v svoj prid. Andrej je tako kmalu postavljen pred preizkušnjo odgovornosti in ohranjanja svoje moralne integritete. Odločiti se mora med Željkom in njegovim divjim življenjem ter tem, kako ostati zvest samemu sebi.
-      </p>
+-->
+  <header>
+    <div class="title">
+      <h1 class="fadein"> POSLEDICE</h1>
+      <h2 class="fadein2"> WHERE TO WATCH
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-twitter"></a>
+        <a href="#" class="fa fa-instagram"></a>
+      </h2>
+
     </div>
-    <div class="videoWrapper">
-      <div class="video" id="trailer">
-        <!--
-        <iframe class="video-itself" class="video-parallax" src="https://www.youtube.com/embed/i8nXEcT04K0?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-        -->
-        <iframe src="https://player.vimeo.com/video/273558457" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-      </div>
+    <video autoplay muted loop id="loadVideo">
+      <source src="img/50s.webm" type="video/webm">
+    </video>
+  </header>
+  <div class="main">
+    <div class="videoWrapper" id="trailer">
+      <iframe src="https://player.vimeo.com/video/273558457" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
     </div>
     <div id="o-filmu">
       <h3>O filmu</h3>
@@ -89,9 +99,9 @@
         </div>
       </div>
     </div>
-    <div class="postelja img"></div>
-    <div  class="logo">
-      <img src="img/logo.png">
+    <div class="postelja img">
+      <a href="http://www.temporama.si/"><img class="logo" src="img/logo-circle.png"></a>
     </div>
+
 </body>
 </html>
