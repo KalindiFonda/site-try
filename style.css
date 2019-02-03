@@ -4,16 +4,26 @@
   	box-sizing: border-box;
 }
 
+@font-face {
+  font-family: 'SharpGroteskLight';
+  font-style: normal;
+  font-weight: normal;
+  src: local('SharpGroteskLight'), url('sharpgrotesk/SharpGroteskLight11.otf') format('truetype');
+}
+
+@font-face {
+  font-family: 'SharpGroteskBlack';
+  font-style: normal;
+  font-weight: normal;
+  src: local('SharpGroteskBlack'), url('sharpgrotesk/SharpGroteskBold08.otf') format('truetype');
+}
+
 html {
 	visibility: hidden;
 }
 
-
-
-
-
 body {
-	font-family: Impact, Verdana, sans-serif;
+	font-family: 'SharpGroteskLight', serif;
 	text-align: center;
 	color: white;
 	background-color: black;
@@ -29,31 +39,33 @@ body {
   z-index: -1;
 }
 
-header {
-	padding-top: 50%;
 
-}
 
 .title {
-	position: absolute;
 	text-align: left;
-	color: red;
-	top: 30%;
-	left: 1em;
+	color: #E20D13;
 }
 
-h1 {
-	font-size: 8em;
-	margin-bottom: 0;
 
+.festival {
+	width: 100px;
+	padding-bottom: 5px;
+	padding-left: 1em;
 }
+
+
+.naslov {
+	width: 50%;
+}
+
 
 h2 {
-	margin-top: -10px;
-	font-size: 1.5em;
+	margin-top: 0;
+	font-size: 2.5em;
 	padding-left: 3em;
-}
+	font-family: 'SharpGroteskBlack', serif;
 
+}
 
 .fadein {
     -webkit-animation: 4s ease 0s normal forwards 1 fadein;
@@ -78,11 +90,28 @@ h2 {
 }
 
 
+
+header {
+	padding-bottom: 200px;
+
+}
+
 #video {
-    position: relative;
     padding: 25px;
     min-width: 100%;
 }
+
+video {
+	max-width: 100%;
+	min-width: 100%;
+}
+
+#trailer {
+	padding-top: 200px;
+	padding-bottom: 200px;
+}
+
+
 /*
 .videoWrapper {
   position: relative;
@@ -100,25 +129,6 @@ h2 {
 }
 */
 
-.video-itself {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-}
-
-video {
-	max-width: 100%;
-	min-width: 100%;
-}
-
-#trailer {
-	padding-top: 200px;
-	padding-bottom: 200px;
-}
-
-
 /*
 iframe {
 	//overflow: hidden;
@@ -126,16 +136,25 @@ iframe {
 }
 */
 
+a {
+	text-decoration: none;
+	color: #E20D13;
+}
+
 .credits {
 	position: relative;
-	font-size: 20px;
+	font-size: 35px;
 	font-weight: 100;
-	padding-top: 55%;
- /*
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%)
-  */
+	padding-top: 35%;
+}
+
+.credits img {
+	padding-top: 15px;
+	max-width: 700px;
+}
+
+.small {
+	font-size: 25px;
 }
 
 
@@ -175,30 +194,45 @@ iframe {
 	background-image: url(img/postelja.png);
 }
 
-
-.content,
 .reviews,
-#projekcije {
+.projekcije {
 	display: flex;
 	justify-content: space-around;
+	flex-wrap: wrap;
+
 }
-/*
-nav {
-	position: fixed;
-	min-width: 100%;
-	padding: 0.8em 0;
-	z-index: 100;
+
+.reviews {
+	font-size: 28px;
+	font-weight: 600;
+	text-shadow: 0.5px 0.5px white;
 }
-*/
-/*
-#top,
-#o-filmu,
-#mediji, */
-#projekcije
+
+.screening {
+	padding-top: 150px;
+    margin-top: -150px;
+    font-size: 50px;
+ 	font-weight: 600;
+
+}
+
+.projekcije
  {
-    padding-top: 400px;
-    margin-top: -400px;
+ 	text-shadow: 2px 2px black;
+ 	font-size: 40px;
+ 	font-weight: 800;
 }
+
+.projekcije a {
+	color: white;
+}
+
+
+.projekcije a:hover {
+	text-decoration: none;
+	color: #E20D13;
+}
+
 
 .link {
 	display: flex;
@@ -206,20 +240,6 @@ nav {
 	width: 45%;
 }
 
-a,
-.name {
-	text-decoration: none;
-	color: rgb(219, 68, 55)
-}
-/*
-a:hover {
-	color: rgb(57, 97, 211);
-}
-*/
-.reviews,
-#projekcije {
-	flex-wrap: wrap;
-}
 
 .month {
 	padding: 10px;
@@ -227,24 +247,18 @@ a:hover {
 
 .text {
 	padding: 1em;
-	font-family: Verdana, sans-serif;
 	width: 300px;
 	color: black;
 }
 
 .text:hover {
-	color: red;
+	color: #E20D13;
 }
 
 .permhover {
 	color: blue;
 }
-/*
-#o-filmu {
-	max-width: 50%;
-	margin: 1em auto;
-}
-*/
+
 /*https://jsfiddle.net/fbysq8k1/1/*/
 /*
 .video-container video,
@@ -271,35 +285,22 @@ a:hover {
     position: fixed;
 }
 */
-/*
-table {
-	margin: 1em auto;
-}
 
-.projekcije-table td {
-	padding: 0 2em;
-}
-
-.projekcije-table th {
-	padding: 1em 0;
-}
-*/
 
 .logo {
 	z-index: 1;
-	width: 30px;
+	width: 40px;
 	border-radius: 60px;
 	position: fixed;
 	right: 1.4em;
 	bottom: 1em;
-
 }
 
 .media {
 	z-index: 1;
 	position: fixed;
-	right: 1.4em;
-	bottom: 3.2em;
+	right: 1.7em;
+	bottom: 3.5em;
 }
 
 .loader {
