@@ -18,6 +18,14 @@
   src: local('SharpGroteskBlack'), url('sharpgrotesk/SharpGroteskBold08.otf') format('truetype');
 }
 
+@font-face {
+  font-family: 'SharpGroteskMedium';
+  font-style: normal;
+  font-weight: normal;
+  src: local('SharpGroteskMedium'), url('sharpgrotesk/SharpGroteskMedium18.otf') format('truetype');
+}
+
+
 html {
 	visibility: hidden;
 }
@@ -59,7 +67,7 @@ body {
 }
 
 
-h2 {
+.podnaslov {
 	margin-top: 0;
 	font-size: 2.5em;
 	padding-left: 3em;
@@ -194,8 +202,11 @@ a {
 	background-image: url(img/postelja.png);
 }
 
-.reviews,
-.projekcije {
+.against-wall {
+	background-image: url(img/against-wall.jpg);
+}
+
+.reviews {
 	display: flex;
 	justify-content: space-around;
 	flex-wrap: wrap;
@@ -209,8 +220,8 @@ a {
 }
 
 .screening {
-	padding-top: 150px;
-    margin-top: -150px;
+	padding-top: 100px;
+    margin-top: -100px;
     font-size: 50px;
  	font-weight: 600;
 
@@ -218,19 +229,28 @@ a {
 
 .projekcije
  {
+ 	font-family: 'SharpGroteskMedium', serif;
  	text-shadow: 2px 2px black;
- 	font-size: 40px;
  	font-weight: 800;
 }
 
+
+
 .projekcije a {
 	color: white;
+	font-size: 30px;
 }
+
 
 
 .projekcije a:hover {
 	text-decoration: none;
 	color: #E20D13;
+}
+
+.projekcije .small {
+	font-weight: 100;
+	/*font-family: 'SharpGroteskLight', serif;*/
 }
 
 
@@ -288,19 +308,16 @@ a {
 
 
 .logo {
-	z-index: 1;
-	width: 40px;
-	border-radius: 60px;
-	position: fixed;
-	right: 1.4em;
-	bottom: 1em;
+	width: 20.5px;
+	margin-bottom: -4px;
+	margin-left: 3px;
 }
 
 .media {
 	z-index: 1;
 	position: fixed;
-	right: 1.7em;
-	bottom: 3.5em;
+	bottom: 1em;
+	right: 1.4em;
 }
 
 .loader {
