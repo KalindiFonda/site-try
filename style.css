@@ -55,11 +55,13 @@ body {
 }
 
 
-.festival {
-	width: 100px;
-	padding-bottom: 5px;
+.festival img {
+	max-width: 45%;
+	padding-bottom: 0;
+	margin-bottom: -140px;
 	padding-left: 1em;
 }
+
 
 
 .naslov {
@@ -68,9 +70,9 @@ body {
 
 
 .podnaslov {
-	margin-top: 0;
-	font-size: 2.5em;
-	padding-left: 3em;
+	margin-top: 4px;
+	font-size: 3.9em;
+	padding-left: 1.72em;
 	font-family: 'SharpGroteskBlack', serif;
 
 }
@@ -114,20 +116,14 @@ video {
 	min-width: 100%;
 }
 
-#trailer {
-	padding-top: 200px;
-	padding-bottom: 200px;
-}
 
-
-/*
 .videoWrapper {
   position: relative;
-  padding-bottom: 56.25%; // 16:9
-  padding-top: 25px;
+  padding-bottom: 56.25%; /* 16:9*/
+  padding-top: 200px;
   height: 0;
 }
-*/
+
 /*.videoWrapper iframe {
   position: absolute;
   top: 0;
@@ -178,6 +174,7 @@ a {
 	background-position: cover;
 }
 
+
 .sitting {
 	background-image: url(img/sitting.jpg);
 }
@@ -192,6 +189,8 @@ a {
 
 .wall {
 	background-image: url(img/wall.jpg);
+/*	filter: blur(8px);
+  	-webkit-filter: blur(8px);*/
 }
 
 .nokiss {
